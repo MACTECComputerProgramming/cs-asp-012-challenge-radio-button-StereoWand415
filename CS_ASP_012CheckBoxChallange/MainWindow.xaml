@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CS_ASP_012CheckBoxChallange"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1020" Width="1900">
     <Grid>
+        <Label x:Name="label" Content="Chose the one you prefer to use!" HorizontalAlignment="Left" Margin="572,104,0,0" VerticalAlignment="Top" FontSize="48" FontWeight="Bold"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="711" Margin="42,239,0,0" VerticalAlignment="Top" Width="816">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFA9B629" Offset="0.879"/>
+                    <GradientStop Color="#FFEDF0D4" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <RadioButton x:Name="PenradioButton" Content="Pen" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="48" Margin="348,205,0,0" GroupName="Write"/>
+        </Border>
+        <RadioButton x:Name="PencilradioButton" Content="Pencil" HorizontalAlignment="Left" Margin="382,323,0,0" VerticalAlignment="Top" FontSize="48" GroupName="Write"/>
+        <RadioButton x:Name="PhoneradioButton" Content="Phone" HorizontalAlignment="Left" Margin="384,557,0,0" VerticalAlignment="Top" FontSize="48" GroupName="Write"/>
+        <RadioButton x:Name="PadradioButton" Content="Pad" HorizontalAlignment="Left" Margin="404,697,0,0" VerticalAlignment="Top" FontSize="48" GroupName="Write"/>
+        <Label x:Name="Pickedlabel1" Content="You Picked. " HorizontalAlignment="Left" Margin="1084,863,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <Button x:Name="button" Content="Push Me!" HorizontalAlignment="Left" Margin="362,801,0,0" VerticalAlignment="Top" FontSize="48" Click="button_Click"/>
+        
+        <Image x:Name="myPad" Source="/tablet.png" Visibility="Visible" Margin="783,228,35,173" Opacity="0"/>
+        <Image x:Name="myPen" Source="/pen.png" Visibility="Visible" Margin="864,223,74,124" Opacity="0"/>
+        <Image x:Name="myPhone" Source="/phone.png" Visibility="Visible" Margin="953,266,147,266" Opacity="0"/>
+        <Image x:Name="myPencil" Source="/pencil.png" Visibility="Visible" Margin="1026,240,195,134" Opacity="0"/>
+
 
     </Grid>
 </Window>
