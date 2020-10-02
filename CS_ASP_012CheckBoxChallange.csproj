@@ -6,4 +6,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="pen.png" />
+    <None Remove="pencil.png" />
+    <None Remove="pencil1.html" />
+    <None Remove="phone.png" />
+    <None Remove="tablet.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="pen.png" />
+    <Resource Include="pencil.png" />
+    <Resource Include="pencil1.html" />
+    <Resource Include="phone.png" />
+    <Resource Include="tablet.png" />
+  </ItemGroup>
+
 </Project>
